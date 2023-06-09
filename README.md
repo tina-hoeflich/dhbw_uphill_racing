@@ -5,6 +5,7 @@ DHBW_Uphill_Racing ist ein Projekt, das im Rahmen der Studienarbeit an der Duale
 ## Voraussetzungen
 - [Unity](https://unity.com/de)
 - [Sensor Wrangler](https://github.com/Doomsdan/SensorWrangler)
+- Keine Störenden ANT+ Signale in der Nähe
 - Ein Pavlok Armband (optional)
 
 ## Installation und Ausführung
@@ -14,14 +15,18 @@ DHBW_Uphill_Racing ist ein Projekt, das im Rahmen der Studienarbeit an der Duale
 3. Fügen Sie eine Datei mit dem Namen `.bazeliskrc` hinzu und fügen Sie `USE_BAZEL_VERSION=4.2.2` ein.
 4. Bauen Sie das Projekt mit Bazelisk: führen Sie im Hauptverzeichnis des Projekts den Befehl `bazelisk build //:Gui` aus.
 5. Navigieren Sie in das `bazel-bin` Verzeichnis mit `cd bazel-bin`.
-6. Führen Sie das Programm mit `./Gui.exe` (Windows) oder `./Gui` (Linux/Mac) aus.
+6. Führen Sie das Programm mit `./Gui.exe` (Windows) aus.
 7. Fügen Sie einen Leistungssensor hinzu.
-8. Starten Sie den Socket an Port 8000.
+8. Starten Sie den Socket an Port 8000 über die GUI der SensorWrangler Software.
 
 ## Nutzung
 
-Stellen Sie eine Verbindung zu Ihrem Smart Trainer über Sensor Wrangler her und beginnen Sie das Spiel. Das Spiel sendet Signale an Ihr Pavlok Armband basierend auf den Daten, die es vom Smart Trainer und Sensor Wrangler erhält.
+Stellen Sie erst eine Verbindung zu Ihrem Smart Trainer über Sensor Wrangler her und beginnen Sie das Spiel durch ausführen der Datei `Studienarbeit Uphill Racing.exe`. Das Spiel nutzt dann die Daten, die es über die Socketverbindung bekommt, um das Fahrrad zu bewegen und sendet Signale an Ihr Pavlok Armband basierend auf den Daten, die es vom Smart Trainer und Sensor Wrangler erhält.
 
-Wenn keine Verbindung zu einem Smart Trainer besteht, kann das Spiel mit den Pfeiltasten auf der Tastatur gespielt werden.
+Die Regel lautet: Schneller ist nicht immer besser! Das Ziel ist es, ein möglichst effektives Ausdauertraining zu absolvieren - nicht zu langsam, nicht zu schnell. Dies wird sich im erreichten Score wiederspielgeln!
+Wenn das Spiel beendet ist, muss ein neuer SocketRecorder auf der Seite von SensorWrangler neu gestartet werden.
 
+Wenn keine Verbindung zu einem Smart Trainer besteht, kann das Spiel mit den Pfeiltasten auf der Tastatur gespielt werden. Dies wird dann als Hinweis auf dem Bildschirm angezeigt.
+
+Am Ende des Spiels können Sie Ihren Namen angeben, um in die Rangliste aufgenommen zu werden. 
 Viel Spaß beim Spielen!
