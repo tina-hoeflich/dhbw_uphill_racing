@@ -1,6 +1,7 @@
-# DHBW_Uphill_Racing
+# DHBW Uphill Racing
 
 DHBW_Uphill_Racing ist ein Projekt, das im Rahmen der Studienarbeit an der Dualen Hochschule Baden-Württemberg in Stuttgart entwickelt wurde. Es handelt sich um ein Rennspiel, das mit einem Smart Trainer über die Software Sensor Wrangler verbunden werden kann. Darüber hinaus kann das Spiel Signale an ein Pavlok Armband senden, wenn die Hersteller-API verfügbar ist. Wenn keine Verbindung zu einem Smart Trainer besteht, kann das Spiel auch mit den Pfeiltasten auf der Tastatur gespielt werden.
+
 
 ## Voraussetzungen
 - [Unity](https://unity.com/de)
@@ -12,6 +13,7 @@ DHBW_Uphill_Racing ist ein Projekt, das im Rahmen der Studienarbeit an der Duale
 
 1. Laden Sie das Repository herunter und entpacken Sie es in einem Verzeichnis Ihrer Wahl.
 2. Installieren Sie SensorWrangler von [https://github.com/Doomsdan/SensorWrangler](https://github.com/Doomsdan/SensorWrangler)
+
 3. Fügen Sie eine Datei mit dem Namen `.bazeliskrc` hinzu und fügen Sie `USE_BAZEL_VERSION=4.2.2` ein.
 4. Bauen Sie das Projekt mit Bazelisk: führen Sie im Hauptverzeichnis des Projekts den Befehl `bazelisk build //:Gui` aus.
 5. Navigieren Sie in das `bazel-bin` Verzeichnis mit `cd bazel-bin`.
@@ -30,3 +32,6 @@ Wenn keine Verbindung zu einem Smart Trainer besteht, kann das Spiel mit den Pfe
 
 Am Ende des Spiels können Sie Ihren Namen angeben, um in die Rangliste aufgenommen zu werden. 
 Viel Spaß beim Spielen!
+
+![ablaufdiagramm_allgemein](https://github.com/tina-hoeflich/dhbw_uphill_racing/assets/44570841/717c233b-7994-45bb-9fc9-5fcac8d86863)
+
